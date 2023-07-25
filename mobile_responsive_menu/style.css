@@ -1,0 +1,70 @@
+.desktopMenu nav {
+  background-color: aliceblue;
+  padding: 15px;
+  margin-top: 0px;
+}
+.desktopMenu nav a {
+  text-decoration: none;
+  font-size: 25px;
+  margin: 15px;
+  font-weight: 700;
+}
+
+.mobile-menu , .mobile-menu-item {
+  display: none;
+}
+
+.close-btn{
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+ 
+  .desktopMenu {
+    display: none;
+  }
+  .mobile-menu {
+    display: revert;
+    /* revert will assign the previous value */
+  }
+  .menu-btn {
+    display: block;
+    background-color: transparent;
+    border-radius: 8px;
+    color: black;
+    font-size: 16px;
+    margin-left: auto;
+    margin-top: 16px;
+    /* align the menu button on the left side */
+  }
+
+.mobile-menu-item{
+display: revert;
+/* position: absolute; */
+height: 0;
+overflow: hidden;
+position: fixed;
+top: 0;
+background-color: white;
+z-index: 1;
+width: 100%;
+
+}
+
+.close-btn{
+  display: block;
+  position: absolute;
+right: 16px;
+top: 16px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 22px;
+
+}
+ li{
+  list-style: none;
+  margin-top: 15px;
+ }
+}
